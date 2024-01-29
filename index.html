@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+
+
+        let user = "Aashish"
+        let pass = "6758"
+
+        const userid = prompt("Enter Your ID ")
+
+        if (userid == user) {
+            console.log("user is right");
+
+            const password = prompt("Enter Your Password")
+            if (password == pass) {
+                console.log("password is right");
+
+
+                let Gujarati = parseInt(prompt("Enter Your Gujarati Mark"))
+                let English = parseInt(prompt("Enter Your English Mark"))
+                let Hindi = parseInt(prompt("Enter Your Hindi Mark"))
+                let Maths = parseInt(prompt("Enter Your Maths Mark"))
+
+                let avg = (Gujarati + English + Hindi + Maths) / 4
+
+                console.log("Result =", avg);
+
+                if (avg > 80) {
+                    console.log("grade, A")
+                }
+                else if (avg > 60 && avg <= 80) {
+                    console.log("grade, B")
+                }
+                else if (avg > 40 && avg <= 60) {
+                    console.log("grade, C");
+                }
+                else {
+                    console.log("FAIL");
+                }
+            }
+
+            else {
+                console.log("password invalid");
+            }
+        }
+        else {
+            console.log("invalid userid");
+        }
+
+
+        let user = "ABC"
+        let uPass = "123"
+        let role1 = "user"
+
+        let admin = "DEF"
+        let aPass = "456"
+        let role2 = "admin"
+
+        const name = prompt("Enter ID")
+        const password = prompt("Enter Password")
+        const role = prompt("Enter Role")
+
+        if(name == user && uPass == password && role == role1)
+        {
+            console.log("Hello");
+        }
+        else if(name == admin && aPass == password && role == role2){
+            console.log("I Phone");
+
+        }
+        else{
+            console.log("Enter Vaild Details");
+        }
+
+    </script>
+
+</body>
+
