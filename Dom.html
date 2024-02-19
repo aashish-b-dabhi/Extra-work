@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+
+</head>
+
+<body>
+
+    <label>User Name : </label>
+    <input type="text" id="name"><br /><br />
+
+    <label>Password : </label>
+    <input type="password" id="password"><br /><br />
+
+    <button onclick="Submit()" style="padding: 5px 15px 5px 15px;">Submit</button>
+
+    <h1 id="text"></h1>
+
+    <script>
+
+
+        let user = "Aashish"
+        let pass = "4092"
+
+        function Submit() {
+
+            let name = document.getElementById("name").value;
+            let password = document.getElementById("password").value;
+
+            
+            if (name === user ) {
+
+                if (password === pass) {
+
+                    document.getElementById("text").innerHTML = "Login Successfull"
+                    document.getElementById("text").style.color = "green"
+
+                    console.log("User Name : ",name);
+                    console.log("Password : ",password);
+
+                }
+                else {
+
+                    document.getElementById("text").innerHTML = "Enter Your Password"
+                    document.getElementById("text").style.color = "red"
+
+                }
+
+            }
+            else {
+
+                document.getElementById("text").innerHTML = "Valid User Name & Password"
+                document.getElementById("text").style.color = "red"
+
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>
