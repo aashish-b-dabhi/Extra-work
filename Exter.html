@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+
+
+        let arr = [
+            {
+                name: "Watch",
+                price: "300",
+                color: "Black",
+                available: true
+            },
+            {
+                name: "Jaguar Spray",
+                price: "329",
+                color: "White",
+                available: false
+            },
+            {
+                name: "Crocs",
+                price: "450",
+                color: "Red",
+                available: true
+            },
+            {
+                name: "Shoes",
+                price: "700",
+                color: "Blue",
+                available: false
+            },
+            {
+                name: "Sunglasses",
+                price: "624",
+                color: "Frame Blue",
+                available: false
+            },
+            {
+                name: "Bags",
+                price: "459",
+                color: "Gear",
+                available: true
+            },
+            {
+                name: "Wallet",
+                price: "465",
+                color: " Blue Hunter",
+                available: true
+            },
+            {
+                name: "Mobile Stand",
+                price: "700",
+                color: "White",
+                available: false
+            },
+            {
+                name: "Mobile Charger",
+                price: "378",
+                color: "Black",
+                available: true
+            },
+            {
+                name: "Mobile",
+                price: "6578",
+                color: "Royal Blue",
+                available: false
+            },
+        ]
+
+
+        let result = arr.filter((val) => val.available === true && val.price > 200 && val.price < 500)
+        console.log(result);
+
+    </script>
+
+</body>
+
+</html>
