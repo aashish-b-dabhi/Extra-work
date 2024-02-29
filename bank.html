@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      class Bank {
+        // constructor() {
+         
+         
+
+        // }
+        createAc() {
+          this.name = prompt("Enter Name");
+          this.age = parseInt(prompt("Enter age"));
+          this.mobile_No = parseInt(prompt("Enter Number"));
+          this.email = prompt("Enter Email");
+          this.s_balance = prompt("Enter Deposite Amount (Minimum 5000 Rupees)");
+         
+        
+          
+          // console.log(this.name);
+          // console.log(this.age);
+          // console.log(this.mobile_No);
+          // console.log(this.email);
+          // console.log(this.s_balance);
+
+          if (this.age >= 18 && this.s_balance >= 5000) {
+            console.log("Account successfull");
+            console.log("account details\n");
+            console.log("ac_no :- " + Math.round(Math.random() * 1000000000000));
+            console.log("ac_holder name :-" + this.name);
+            console.log("age :-" + this.age);
+            console.log("mobile_no :- " + this.mobile_No);
+            console.log("email : -" + this.email);
+            console.log("balance :- " + this.s_balance);
+          } else {
+            console.log("invalid details");
+          }
+        }
+        withdraw(){
+          this.withdra = parseInt(prompt("Enter withdraw amount = "));
+          if(0<this.withdra && this.withdra < this.s_balance && this.age >= 18 && this.s_balance >= 5000){
+            console.log("withdraw amount = " + this.withdra);
+          }else{
+            console.log("enter valid withraw amount");
+          }
+        }
+        Depo(){
+          this.Deposite = parseInt(prompt("Enter deposite amount = "));
+          if(0<this.Deposite && this.age >= 18 && this.s_balance >= 5000){
+            console.log("deposite amount = " + this.Deposite);
+          }else{
+            console.log("enter valid deposite amount");
+          }
+        }
+        Avl(){
+          this.avl_bal = this.s_balance - this.withdra + this.Deposite
+          if(this.age >= 18 && this.s_balance >= 5000){
+            console.log("avilable amount = " + this.avl_bal);
+          }
+         
+        }
+
+      }
+
+      s1 = new Bank();
+      s1.createAc();
+      s1.withdraw();
+      s1.Depo();
+      s1.Avl();
+    </script>
+  </body>
+</html>
